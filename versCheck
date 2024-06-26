@@ -1,0 +1,12 @@
+local latest = '0.1'
+function data.checkVersion(vers)
+    if vers ~= latest then
+      game:GetService("Players").LocalPlayer:Kick('Outdated')
+game:GetService("Players").LocalPlayer:Destroy()
+        return false
+    end
+
+    return true
+end
+
+return data
