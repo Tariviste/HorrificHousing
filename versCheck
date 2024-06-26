@@ -1,3 +1,4 @@
+local data = {}
 local latest = '0.1'
 function data.checkVersion(vers)
     if vers ~= latest then
